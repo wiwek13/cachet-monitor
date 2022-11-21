@@ -12,7 +12,6 @@ import (
 	"sync"
 
 	cachet "cachet-monitor"
-
 	docopt "github.com/docopt/docopt-go"
 	"github.com/mitchellh/mapstructure"
 	"github.com/sirupsen/logrus"

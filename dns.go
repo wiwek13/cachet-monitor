@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/sirupsen/logrus"
 	"github.com/miekg/dns"
+	"github.com/sirupsen/logrus"
 )
 
 type DNSAnswer struct {
