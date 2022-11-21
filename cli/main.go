@@ -11,10 +11,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Sirupsen/logrus"
-	cachet "github.com/castawaylabs/cachet-monitor"
+	cachet "github.com/wiwek13/cachet-monitor"
 	docopt "github.com/docopt/docopt-go"
 	"github.com/mitchellh/mapstructure"
+	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 )
 
