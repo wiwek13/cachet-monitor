@@ -11,7 +11,8 @@ import (
 	"strings"
 	"sync"
 
-	cachet "github.com/wiwek13/cachet-monitor"
+	cachet "cachet-monitor"
+
 	docopt "github.com/docopt/docopt-go"
 	"github.com/mitchellh/mapstructure"
 	"github.com/sirupsen/logrus"

@@ -32,7 +32,6 @@ type HTTPMonitor struct {
 	AbstractMonitor `mapstructure:",squash"`
 
 	Method             string
-	Body               string
 	ExpectedStatusCode int `mapstructure:"expected_status_code"`
 	Headers            map[string]string
 
@@ -43,8 +42,7 @@ type HTTPMonitor struct {
 
 // TODO: test
 func (monitor *HTTPMonitor) test() bool {
-	bodyReader := strings.NewReader(monitor.Body)
-	req, err := http.NewRequest(monitor.Method, monitor.Target, bodyReader)
+	req, err := http.NewRequest(monitor.Method, monitor.Target, nil)
 	for k, v := range monitor.Headers {
 		req.Header.Add(k, v)
 	}
